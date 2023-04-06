@@ -1,7 +1,6 @@
 ---
 title: OntoPortal Alliance
-description: >-
-	A consortium of researchers dedicated to promoting semantic services in scientific research .
+description: A consortium of researchers dedicated to promoting semantic services in scientific research .
 ---
 <div style="text-align: center; margin: 5px"> 
 	<img src="{{ site.baseurl }}/images/alliance_logo.png" style="height: 150px; width: 150px">
