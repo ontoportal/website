@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
+title: Ontoportal
+url: "https://ontoportal.org/"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,15 +10,47 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product marketing template for Jekyll.
+description: Ontoportal product website.
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name:  Twitter
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://twitter.com/ontoportal
+
+
+# Landing page data
+
+quotes:
+
+alliance_members:
+  - name: 'Bioportal'
+    link: https://bioportal.bioontology.org/
+    description: "The world's most comprehensive repository of biomedical ontologies"
+    logo: '/images/alliance_member_logos/bioportal.png'
+  - name: 'Agroportal'
+    link: https://agroportal.lirmm.fr/
+    description: "A vocabulary and ontology repository for agronomy and related domains"
+    logo: '/images/alliance_member_logos/agroportal.png'
+  - name: 'SIFR Bioportal'
+    link: https://bioportal.lirmm.fr/
+    description: "A vocabulary and ontology repository for agronomy and related domains"
+    logo: '/images/alliance_member_logos/sifr_bioportal.png'
+  - name: 'Ecoportal'
+    link: https://bioportal.lirmm.fr/
+    description: "A vocabulary and ontology repository for agronomy and related domains"
+    logo: '/images/alliance_member_logos/ecoportal.png'
+  - name: 'Medportal'
+    link: https://bioportal.lirmm.fr/
+    description: "A vocabulary and ontology repository for agronomy and related domains"
+    logo: '/images/alliance_member_logos/medportal.png'
+  - name: 'Matportal'
+    link: https://bioportal.lirmm.fr/
+    description: "A vocabulary and ontology repository for agronomy and related domains"
+    logo: '/images/alliance_member_logos/matportal.png'
+
 
 # -----
 # Build

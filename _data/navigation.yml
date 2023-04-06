@@ -1,24 +1,24 @@
-- name: Pricing
-  link: /pricing/
+- name: License Terms
+  link: https://ontoportal.github.io/documentation/administration/general/licensing
+  new_window: false
+  highlight: false
+- name: Alliance
+  link: /about/
   new_window: false
   highlight: false
 - name: Blog
   link: /blog/
   new_window: false
   highlight: false
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
 - name: Contact
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
+- name: documentation
+  link: https://ontoportal.github.io/documentation/
   new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
+  highlight: true
+- name: Github
+  link: https://github.com/ontoportal
   new_window: true
   highlight: true
