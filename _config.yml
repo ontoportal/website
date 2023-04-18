@@ -30,26 +30,32 @@ alliance_members:
     link: https://bioportal.bioontology.org/
     description: "The world's most comprehensive repository of biomedical ontologies"
     logo: '/images/alliance_member_logos/bioportal.png'
+    color: '#234979'
   - name: 'Agroportal'
     link: https://agroportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/agroportal.png'
+    color: '#31b403'
   - name: 'SIFR Bioportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/sifr_bioportal.png'
+    color: '#74a9cb'
   - name: 'Ecoportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/ecoportal.png'
+    color: '#0d508a'
   - name: 'Medportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/medportal.png'
+    color: '#234979'
   - name: 'Matportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/matportal.png'
+    color: '#009574'
 
 
 # -----
