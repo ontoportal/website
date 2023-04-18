@@ -190,8 +190,65 @@ description: Deploy and use your Ontoportal repository
         </iframe>
 	</section>
 
-	<section class="bottom-cta">
-		<h2 class="editable"><strong>Deploy</strong> and <strong>use</strong> your own Ontoportal today</h2>
-		<div class="button alt"><a href="https://ontoportal.github.io/documentation/administration/steps/getting_started">Get Started Free</a></div>
+	<section  class="bottom-cta">
+		<div class="container flex sponsorsFooter" style="flex-direction: column; justify-content: center"  >
+			<div class="text editable flex" style="justify-content: center; flex-direction: column; align-items: center; margin-top: 10px">
+				<h2><span class="sponsorsFooter-Title">Our</span> <strong>sponsors</strong></h2>
+			</div>
+			<ul class="flex">
+				{% for sponsor in site.sponsors %}
+					<li data-group="{{ sponsor.portals }}">
+                       <a href="{{sponsor.link}}" target="_blank"><img src="{{ sponsor.logo }}" alt="{{sponsor.acronym}} image"></a>
+					</li>
+				{% endfor %}
+			</ul>
+			<script>
+				const ul = document.querySelector(".sponsorsFooter ul");
+				const title = document.querySelector(".sponsorsFooter .sponsorsFooter-Title");
+
+				ul.querySelectorAll('li').forEach(li => {
+					const portals =  li.getAttribute("data-group").toString().trim().split(',')
+					li.addEventListener("mouseenter", () => {
+						showPortals(ul,portals)
+						title.innerHTML = getTitle(portals)
+					})
+
+					li.addEventListener("mouseleave", () => {
+						title.innerHTML = "Our";
+						resetPortals(ul)
+					})
+				})
+
+				function getTitle(portals){
+					const length  = portals.length
+					if (length === 1) {
+						return portals[0]
+					} else if (length === 2) {
+						return portals.join(' and ');
+					} else {
+						const last = portals.slice(-1)
+						const rest = portals.slice(0, - 1)
+						return rest.join(', ') + ', and ' + last
+					}
+				}
+				function showPortals(container,portals){
+					container.querySelectorAll('li').forEach(li => {
+						const currentPortals =  li.getAttribute("data-group").toString().trim().split(',')
+						if(portals.every(item => currentPortals.includes(item))){
+							li.classList.add("hover")
+							container.classList.add("enter")
+						}
+					})
+				}
+				function resetPortals(container){
+					container.classList.remove("enter")
+					container.querySelectorAll('li').forEach(li => {
+						li.classList.remove("hover")
+					})
+				}
+
+
+			</script>
+		</div>
 	</section>
 </div>
