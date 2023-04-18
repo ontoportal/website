@@ -58,6 +58,61 @@ alliance_members:
     logo: '/images/alliance_member_logos/matportal.png'
     color: '#009574'
 
+sponsors:
+  - acronym: 'D2KAB'
+    logo: https://agroportal.lirmm.fr/assets/logos/collaboration/d2kab_logo-5155645cfcfe00890f3cad2307ca7975a1ff43b841755002830c99aba060a9e5.png
+    link: http://www.d2kab.org/
+    portals: 'AgroPortal'
+  - acronym: 'Numev'
+    logo: https://agroportal.lirmm.fr/assets/logos/supports/numev_logo-422570c5e78de28887f0f154c108a8941e8558b08b5029d1d2c72c810d572675.png
+    link: https://numev.edu.umontpellier.fr/
+    portals: 'AgroPortal, OntoPortal'
+  - acronym: 'INRAE'
+    logo: https://www.inrae.fr/themes/custom/inrae_socle/logo.svg
+    link: https://www.inrae.fr/
+    portals: 'AgroPortal'
+  - acronym: 'CNRS'
+    logo: https://www.cnrs.fr/themes/custom/cnrs/logo.svg
+    link: https://www.cnrs.fr/en
+    portals: 'AgroPortal'
+  - acronym: 'UMontpellier'
+    logo: https://agroportal.lirmm.fr/assets/logos/collaboration/um_logo-8646cda265744e9b552d471514ebb35147a210696328a76ea8ec7f9ff99cb98a.png
+    link: https://www.umontpellier.fr/en/
+    portals: 'AgroPortal, SIFR BioPortal'
+  - acronym: 'FAIR-IMPACT'
+    logo: https://fair-impact.eu/themes/fairimpact/logo.svg
+    link: https://fair-impact.eu/
+    portals: 'AgroPortal, EcoPortal, EarthPortal, SIFR BioPortal'
+  - acronym: 'Stanford'
+    logo: https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/SU_SealColor_web3.png
+    link: https://bmir.stanford.edu/
+    portals: 'BioPortal, OntoPortal'
+  - acronym: 'LifeWatch ERIC'
+    logo: https://www.lifewatch.eu/wp-content/uploads/2021/07/logoLW_eric_outline2-01.svg
+    link: https://www.lifewatch.eu/
+    portals: 'EcoPortal'
+  - acronym: 'BAM'
+    logo: https://www.bam.de/SiteGlobals/StyleBundles/Bilder/Farbschema/DE/logo.png?__blob=normal
+    link: https://www.bam.de/Navigation/DE/Home/home.html
+    portals: 'MatPortal'
+  - acronym: 'Fraunhofer Materials'
+    logo: https://www.materials.fraunhofer.de/content/dam/materials/materials_190x52.gif
+    link: https://www.materials.fraunhofer.de/
+    portals: 'MatPortal'
+  - acronym: 'OntoCommons'
+    logo: https://ontocommons.eu/themes/paranoid/logo.png
+    link: https://ontocommons.eu/
+    portals: 'IndustryPortal'
+  - acronym: 'ENIT'
+    logo: https://www.enit.fr/skins/enit-new/resources/img/logo_enit.jpg
+    portals: 'IndustryPortal'
+    link: https://www.enit.fr/fr/index.html
+  - acronym: 'BMICC'
+    logo: http://59.108.16.249:8883/biomarker/image/a.jpg
+    link: http://www.bmicc.cn/web/share/home/
+    portals: 'MedPortal'
+
+
 
 # -----
 # Build
