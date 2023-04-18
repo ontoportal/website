@@ -7,6 +7,7 @@ baseurl: '/website'
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
+support_mail: "support@bioontology.org"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
