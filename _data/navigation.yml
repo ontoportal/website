@@ -10,10 +10,6 @@
   link: /blog/
   new_window: false
   highlight: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
 - name: documentation
   link: https://ontoportal.github.io/documentation/
   new_window: true

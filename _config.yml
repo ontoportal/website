@@ -7,6 +7,7 @@ baseurl: '/website'
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
+support_mail: "support@bioontology.org"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -30,26 +31,33 @@ alliance_members:
     link: https://bioportal.bioontology.org/
     description: "The world's most comprehensive repository of biomedical ontologies"
     logo: '/images/alliance_member_logos/bioportal.png'
+    color: '#234979'
   - name: 'Agroportal'
     link: https://agroportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/agroportal.png'
+    color: '#31b403'
   - name: 'SIFR Bioportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/sifr_bioportal.png'
+    color: '#74a9cb'
   - name: 'Ecoportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/ecoportal.png'
+    color: '#0d508a'
   - name: 'Medportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/medportal.png'
+    color: '#234979'
   - name: 'Matportal'
     link: https://bioportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/matportal.png'
+    color: '#009574'
+
 sponsors:
   - acronym: 'D2KAB'
     logo: https://agroportal.lirmm.fr/assets/logos/collaboration/d2kab_logo-5155645cfcfe00890f3cad2307ca7975a1ff43b841755002830c99aba060a9e5.png
@@ -103,8 +111,6 @@ sponsors:
     logo: http://59.108.16.249:8883/biomarker/image/a.jpg
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
-
-
 
 
 
