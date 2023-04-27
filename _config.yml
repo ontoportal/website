@@ -114,7 +114,7 @@ sponsors:
     link: https://www.enit.fr/fr/index.html
     portals: 'IndustryPortal'
   - acronym: 'BMICC'
-    logo: http://59.108.16.249:8883/biomarker/image/a.jpg
+    logo: '/images/sponsor_logos/Bmicc.png'
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
 
