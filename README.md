@@ -1,5 +1,4 @@
-# Ontoportal product website
-
+# OntoPortal product and OntoPortal Alliance website
 
 
 ## Setup
@@ -10,7 +9,7 @@
 
 ## Develop
 
-Ontoportal product website was built with [Jekyll](http://jekyllrb.com/) version 3.3.1 and the template Hydra, but should support newer versions as well.
+OntoPortal product and OntoPortal Alliance website was built with [Jekyll](http://jekyllrb.com/) version 3.3.1 and the template Hydra, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
