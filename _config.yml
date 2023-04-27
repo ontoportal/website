@@ -69,18 +69,18 @@ sponsors:
     logo: https://agroportal.lirmm.fr/assets/logos/collaboration/d2kab_logo-5155645cfcfe00890f3cad2307ca7975a1ff43b841755002830c99aba060a9e5.png
     link: http://www.d2kab.org/
     portals: 'AgroPortal'
-  - acronym: 'Numev'
+  - acronym: 'NUMEV'
     logo: https://agroportal.lirmm.fr/assets/logos/supports/numev_logo-422570c5e78de28887f0f154c108a8941e8558b08b5029d1d2c72c810d572675.png
     link: https://numev.edu.umontpellier.fr/
     portals: 'AgroPortal, OntoPortal'
   - acronym: 'INRAE'
     logo: https://www.inrae.fr/themes/custom/inrae_socle/logo.svg
     link: https://www.inrae.fr/
-    portals: 'AgroPortal'
+    portals: 'AgroPortal, OntoPortal'
   - acronym: 'CNRS'
     logo: https://www.cnrs.fr/themes/custom/cnrs/logo.svg
     link: https://www.cnrs.fr/en
-    portals: 'AgroPortal'
+    portals: 'AgroPortal,SIFR BioPortal, EarthPortal'
   - acronym: 'UMontpellier'
     logo: https://agroportal.lirmm.fr/assets/logos/collaboration/um_logo-8646cda265744e9b552d471514ebb35147a210696328a76ea8ec7f9ff99cb98a.png
     link: https://www.umontpellier.fr/en/
@@ -88,7 +88,7 @@ sponsors:
   - acronym: 'FAIR-IMPACT'
     logo: https://fair-impact.eu/themes/fairimpact/logo.svg
     link: https://fair-impact.eu/
-    portals: 'AgroPortal, EcoPortal, EarthPortal, SIFR BioPortal'
+    portals: 'AgroPortal, EcoPortal, EarthPortal, SIFR BioPortal, OntoPortal'
   - acronym: 'Stanford'
     logo: https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/SU_SealColor_web3.png
     link: https://bmir.stanford.edu/
@@ -111,8 +111,8 @@ sponsors:
     portals: 'IndustryPortal'
   - acronym: 'ENIT'
     logo: https://www.enit.fr/skins/enit-new/resources/img/logo_enit.jpg
-    portals: 'IndustryPortal'
     link: https://www.enit.fr/fr/index.html
+    portals: 'IndustryPortal'
   - acronym: 'BMICC'
     logo: http://59.108.16.249:8883/biomarker/image/a.jpg
     link: http://www.bmicc.cn/web/share/home/
