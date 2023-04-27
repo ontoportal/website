@@ -1,21 +1,21 @@
 # ----
 # Site
 
-title: Ontoportal
+title: OntoPortal
 url: "https://ontoportal.org/"
 baseurl: '/website'
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
-support_mail: "support@bioontology.org"
+support_mail: "support@ontoportal.org"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Ontoportal product website.
+description: OntoPortal website presenting the OntoPortal technology product developped by the OntoPortal Alliance.
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: OntoPortal Alliance (Clement Jonquet, John Graybeal)
+  email: ontoportal-alliance@lists.stanford.edu
+  twitter: ontoportal
 social:
   name:  Twitter
   links:
