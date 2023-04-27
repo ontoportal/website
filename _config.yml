@@ -27,36 +27,42 @@ social:
 quotes:
 
 alliance_members:
-  - name: 'Bioportal'
+  - name: 'BioPortal'
     link: https://bioportal.bioontology.org/
     description: "The world's most comprehensive repository of biomedical ontologies"
     logo: '/images/alliance_member_logos/bioportal.png'
     color: '#234979'
-  - name: 'Agroportal'
+  - name: 'SIFR BioPortal'
+    link: https://bioportal.lirmm.fr/
+    description: "A repository for French biomedical terminologies and ontologies"
+    logo: '/images/alliance_member_logos/sifr_bioportal.png'
+    color: '#74a9cb'
+  - name: 'AgroPortal'
     link: https://agroportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
     logo: '/images/alliance_member_logos/agroportal.png'
     color: '#31b403'
-  - name: 'SIFR Bioportal'
-    link: https://bioportal.lirmm.fr/
-    description: "A vocabulary and ontology repository for agronomy and related domains"
-    logo: '/images/alliance_member_logos/sifr_bioportal.png'
-    color: '#74a9cb'
-  - name: 'Ecoportal'
-    link: https://bioportal.lirmm.fr/
-    description: "A vocabulary and ontology repository for agronomy and related domains"
+  - name: 'EcoPortal'
+    link: https://ecoportal.lifewatch.eu/
+    description: "The LifeWatch ERIC repository of semantic resources for ecology and related domains"
     logo: '/images/alliance_member_logos/ecoportal.png'
     color: '#0d508a'
-  - name: 'Medportal'
-    link: https://bioportal.lirmm.fr/
-    description: "A vocabulary and ontology repository for agronomy and related domains"
+  - name: 'MedPortal'
+    link: http://medportal.bmicc.cn/
+    description: "A repository for Chineese biomedical terminologies and ontologies"
     logo: '/images/alliance_member_logos/medportal.png'
     color: '#234979'
-  - name: 'Matportal'
-    link: https://bioportal.lirmm.fr/
-    description: "A vocabulary and ontology repository for agronomy and related domains"
+  - name: 'MatPortal'
+    link: https://matportal.org/
+    description: "The ontology repository for materials science"
     logo: '/images/alliance_member_logos/matportal.png'
     color: '#009574'
+  - name: 'IndustryPortal'
+    link: http://industryportal.enit.fr
+    description: "A common ontology portal for industry and related domains"
+    logo: '/images/alliance_member_logos/industryportal.png'
+    color: '#74a9cb'
+  
 
 sponsors:
   - acronym: 'D2KAB'
