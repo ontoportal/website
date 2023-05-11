@@ -3,6 +3,8 @@
 
 title: OntoPortal
 url: "https://ontoportal.org/"
+virtual_appliance_url: "https://ontoportal.github.io/documentation/administration/steps/getting_started"
+demo_url: "https://demo.ontoportal.org"
 baseurl: '/website'
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -114,7 +116,7 @@ sponsors:
     link: https://www.enit.fr/fr/index.html
     portals: 'IndustryPortal'
   - acronym: 'BMICC'
-    logo: '/images/sponsor_logos/Bmicc.png'
+    logo: '/website/images/sponsor_logos/Bmicc.png'
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
 
