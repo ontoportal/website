@@ -3,12 +3,29 @@
     link: /blog/
   - name: About
     link: /about/
+  - name: License Terms
+    link: https://ontoportal.github.io/documentation/administration/general/licensing
+    new_window: false
+   
 - links:
-  - name: Docs
-    link: /
+  - name: Documentation
+    link: https://ontoportal.github.io/documentation/
     new_window: true
+  - name: Cite us
+    link: https://hal.science/hal-04088537
+    new_window: true
+
+
 - links:
   - name: Twitter
     link: https://twitter.com/ontoportal
     social_icon: Twitter
+    new_window: true
+  - name: LinkedIn
+    link: https://www.linkedin.com/groups/12830390/
+    social_icon: LinkedIn
+    new_window: true
+  - name: GitHub
+    link: https://github.com/orgs/ontoportal/teams
+    social_icon: GitHub
     new_window: true

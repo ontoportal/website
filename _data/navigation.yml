@@ -1,7 +1,3 @@
-- name: License Terms
-  link: https://ontoportal.github.io/documentation/administration/general/licensing
-  new_window: false
-  highlight: false
 - name: Alliance
   link: /about/
   new_window: false
@@ -10,11 +6,11 @@
   link: /blog/
   new_window: false
   highlight: false
-- name: documentation
+- name: Documentation
   link: https://ontoportal.github.io/documentation/
   new_window: true
   highlight: true
-- name: Github
+- name: GitHub
   link: https://github.com/ontoportal
   new_window: true
   highlight: true
