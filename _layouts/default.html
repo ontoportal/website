@@ -42,7 +42,9 @@
 								{% endif %}
 								{{ link.name }}</a></li>
 						{% endfor %}
-						<li><a href="mailto:{{site.support_mail}}">Contact us</a></li>
+						{% if forloop.index == 2 %}
+							<li><a href="mailto:{{site.support_mail}}">Contact us</a></li>
+						{% endif %}
 					</ul>
 					{% endfor %}
 				</div>

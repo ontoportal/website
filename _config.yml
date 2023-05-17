@@ -63,7 +63,7 @@ alliance_members:
     link: http://industryportal.enit.fr
     description: "A common ontology portal for industry and related domains"
     logo: '/images/alliance_member_logos/industryportal.png'
-    color: '#74a9cb'
+    color: '#1c0f5d'
   
 
 sponsors:
@@ -116,7 +116,7 @@ sponsors:
     link: https://www.enit.fr/fr/index.html
     portals: 'IndustryPortal'
   - acronym: 'BMICC'
-    logo: '/website/images/sponsor_logos/Bmicc.png'
+    logo: '/images/sponsor_logos/Bmicc.png'
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
 
