@@ -51,7 +51,7 @@ alliance_members:
     color: '#0d508a'
   - name: 'MedPortal'
     link: http://medportal.bmicc.cn/
-    description: "A repository for Chineese biomedical terminologies and ontologies"
+    description: "A repository for Chinese biomedical terminologies and ontologies"
     logo: '/images/alliance_member_logos/medportal.png'
     color: '#234979'
   - name: 'MatPortal'
