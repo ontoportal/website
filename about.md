@@ -57,16 +57,6 @@ description: Dedicated to promoting semantic services.
 	<img src="{{ site.baseurl }}/images/workshop2022-group-photo.png" alt="Screenshot" />
 </div>
 
-<ul class="staff">
-				{% for portal in site.alliance_members %}
-				<li>
-					<div style="height: 100px;background-color:{{portal.color}}" class="square-image"><img src="{% include relative-src.html src=portal.logo %}" alt="{{ portal.name }}" style="object-fit: contain;width: 200px; height: 100px"/></div>
-					<div class="name"><a target="_blank" href="{{ portal.link }}" style="color: black">{{ portal.name }}</a></div>
-					<div class="position">{{ portal.description }}</div>
-				</li>
-				{% endfor %}
-			</ul>
-
 <p class="subtext editable"> Beyond the domain-specific portals, the OntoPortal technology is deployed by many external parties with other objectives. For instance, hospitals reuse the technology in-house to use services such as the Annotator on sensitive data. <br>
 Through 2015, the virtual appliance file was downloaded or deployed more than 140 times. Since version 3.0 (2020), 98 unique accounts have registered 135 OntoPortal appliances and in 2022, 60 unique appliance IDs called home including 19 running in Amazon Machine Instances.
  </p>
