@@ -6,7 +6,7 @@ url: "https://ontoportal.org"
 virtual_appliance_url: "https://ontoportal.github.io/documentation/administration/steps/getting_started"
 demo_url: "https://demo.ontoportal.org"
 baseurl: ''
-google_analytics_key:
+google_analytics_id: G-K28QEN0HVL
 google_maps_javascript_api_key:
 disqus_shortname:
 support_mail: "support@ontoportal.org"
@@ -207,7 +207,3 @@ _comments:
   highlight: Emphasis the text
   color: The background colour used in the plan name and call to action.
   new_window: Open link in new window
-
-  # Google Analytics
-  ga_tracking: G-40129Q9CS5
-  ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
