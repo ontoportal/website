@@ -1,5 +1,5 @@
 ---
-title: OntoPortal Workshop 2023 Public Session
+title: OntoPortal Workshop 2022 Public Session
 categories:
  - Happenings
  - News

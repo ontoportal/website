@@ -13,7 +13,7 @@ description: Dedicated to promoting semantic services.
 
 
 ## Our <strong>mission</strong>
-<p class="subtext editable">The <strong>OntoPortal Alliance</strong> is a consortium of several research and infrastructure teams and a company dedicated to promoting the development ontology repositories ––in science and other disciplines–– based on the open, collaboratively developed <strong>OntoPortal</strong> software.</p>
+<p class="subtext editable">The <strong>OntoPortal Alliance</strong> is a consortium of several research and infrastructure teams and a company dedicated to promoting the development of ontology repositories ––in science and other disciplines–– based on the open, collaboratively developed <strong>OntoPortal</strong> software.</p>
 
 <p class="subtext editable">Teams in the Alliance develop and maintain several openly accessible ontology repositories and semantic artefact catalogues. These ontology repositories include BioPortal, the primary and historical source of OntoPortal code, but also AgroPortal, EcoPortal, MatPortal and more...</p>
 
