@@ -11,7 +11,7 @@ date: 2023-09-01
 We are pleased to announce the **2nd OntoPortal Alliance Workshop in Lecce**, Italy from September 26-29, 2023.
 
 The 2023 workshop will feature 2 public (open to all interested parties) online events: 
-* A virtual public session, September 27th, 16h-18h CEST with a quick general presentation of OntoPortal, a user panel and Q&A session with representatives of different communities using the OntoPortal technology and a tutorial (to be confirmed). [Please register for this session here](https://forms.gle/Bz3xBGRoXYxj31r87). 
+* A virtual public session, September 27th, 16h-18h CEST will address the  Ontology Development Lifecycle. This session will show examples that integrate ontology development with the OntoPortal platform, and follow with a user panel discussion—including community members using OntoPortal—and audience Q&A on the challenges and opportunities in the lifecycle and OntoPortal. [Please register for this session here](https://forms.gle/Bz3xBGRoXYxj31r87). 
 
 * The [FAIR-IMPACT Semantic Artefact governance workshop](https://fair-impact.eu/events/fair-impact-events/fair-impact-semantic-artefact-governance-workshop), September 28th, 16h30-18h30, a public workshop organized by the EOSC project FAIR-IMPACT’s T4.1 on governance and semantics. [Please register for this session here](https://fair-impact.eu/events/fair-impact-events/fair-impact-semantic-artefact-governance-workshop). 
 
