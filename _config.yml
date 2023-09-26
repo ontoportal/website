@@ -64,6 +64,11 @@ alliance_members:
     description: "A common ontology portal for industry and related domains"
     logo: '/images/alliance_member_logos/industryportal.png'
     color: '#1c0f5d'
+  - name: 'EarthPortal'
+    link: https://earthportal.eu/
+    description: "A semantic artefact repository dedicated to Earth sciences"
+    logo: '/images/alliance_member_logos/earthportal.png'
+    color: '#1e2251'
   
 
 sponsors:
