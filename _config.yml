@@ -69,7 +69,11 @@ alliance_members:
     description: "A semantic artefact repository dedicated to Earth sciences"
     logo: '/images/alliance_member_logos/earthportal.png'
     color: '#1e2251'
-  
+  - name: 'BiodivPortal'
+    link: https://biodivportal.gfbio.org/
+    description: "A semantic artefact repository for biodiversity"
+    logo: '/images/alliance_member_logos/biodivportal.png'
+    color: '#33691B'  
 
 sponsors:
   - acronym: 'D2KAB'
