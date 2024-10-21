@@ -73,8 +73,13 @@ alliance_members:
     link: https://biodivportal.gfbio.org/
     description: "A semantic artefact repository for biodiversity"
     logo: '/images/alliance_member_logos/biodivportal.png'
-    color: '#33691B'  
-
+    color: '#33691B'
+  - name: 'TechnoPortal'
+    link: https://technoportal.hevs.ch/
+    description: "A repository for the technology sciences domain"
+    logo: '/images/alliance_member_logos/technoportal.png'
+    color: '#9C4E81'
+    
 sponsors:
   - acronym: 'D2KAB'
     logo: https://agroportal.lirmm.fr/assets/logos/collaboration/d2kab_logo-5155645cfcfe00890f3cad2307ca7975a1ff43b841755002830c99aba060a9e5.png
