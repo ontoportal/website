@@ -79,6 +79,11 @@ alliance_members:
     description: "A repository for the technology sciences domain"
     logo: '/images/alliance_member_logos/technoportal.png'
     color: '#9C4E81'
+  - name: 'Ontoportal-Astro'
+    link: https://ontoportal-astro.eu/
+    description: "A vocabulary and ontology repository for astronomy and related domains"
+    logo: '/images/alliance_member_logos/ontoportal-astro.png'
+    color: '#624ECF'
     
 sponsors:
   - acronym: 'D2KAB'
