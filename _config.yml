@@ -138,8 +138,18 @@ sponsors:
     logo: '/images/sponsor_logos/Bmicc.png'
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
-
-
+  - acronym: 'Observatoire de Paris'
+    logo: https://observatoiredeparis.psl.eu/IMG/logo/logo-obs-2.svg
+    logo: '/images/sponsor_logos/obs-paris.png'
+    portals: 'OntoPortal-Astro'
+  - acronym: 'OSCARS'
+    logo: https://oscars-project.eu/themes/custom/skeleton/logo.svg
+    link: https://oscars-project.eu/
+    portals: 'OntoPortal-Astro'
+  - acronym: 'CNES'
+    link: https://cnes.fr/en
+    logo: '/images/sponsor_logos/cnes.png'
+    portals: 'OntoPortal-Astro'
 
 # -----
 # Build
