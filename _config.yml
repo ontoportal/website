@@ -79,6 +79,11 @@ alliance_members:
     description: "A repository for the technology sciences domain"
     logo: '/images/alliance_member_logos/technoportal.png'
     color: '#9C4E81'
+  - name: 'Ontoportal-Astro'
+    link: https://ontoportal-astro.eu/
+    description: "A vocabulary and ontology repository for astronomy and related domains"
+    logo: '/images/alliance_member_logos/ontoportal-astro.png'
+    color: '#624ECF'
     
 sponsors:
   - acronym: 'D2KAB'
@@ -133,8 +138,18 @@ sponsors:
     logo: '/images/sponsor_logos/Bmicc.png'
     link: http://www.bmicc.cn/web/share/home/
     portals: 'MedPortal'
-
-
+  - acronym: 'Observatoire de Paris'
+    logo: https://observatoiredeparis.psl.eu/IMG/logo/logo-obs-2.svg
+    logo: '/images/sponsor_logos/obs-paris.png'
+    portals: 'OntoPortal-Astro'
+  - acronym: 'OSCARS'
+    logo: https://oscars-project.eu/themes/custom/skeleton/logo.svg
+    link: https://oscars-project.eu/
+    portals: 'OntoPortal-Astro'
+  - acronym: 'CNES'
+    link: https://cnes.fr/en
+    logo: '/images/sponsor_logos/cnes.png'
+    portals: 'OntoPortal-Astro'
 
 # -----
 # Build
