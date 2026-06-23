@@ -17,9 +17,9 @@
 
 
 - links:
-  - name: Twitter
-    link: https://twitter.com/ontoportal
-    social_icon: Twitter
+  - name: Bluesky
+    link: https://bsky.app/profile/ontoportal.bsky.social
+    social_icon: Bluesky
     new_window: true
   - name: LinkedIn
     link: https://www.linkedin.com/groups/12830390/
