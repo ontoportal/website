@@ -39,6 +39,7 @@ alliance_members:
     description: "A repository for French biomedical terminologies and ontologies"
     logo: '/images/alliance_member_logos/sifr_bioportal.png'
     color: '#74a9cb'
+    retired: true
   - name: 'AgroPortal'
     link: https://agroportal.lirmm.fr/
     description: "A vocabulary and ontology repository for agronomy and related domains"
@@ -64,6 +65,7 @@ alliance_members:
     description: "A common ontology portal for industry and related domains"
     logo: '/images/alliance_member_logos/industryportal.png'
     color: '#1c0f5d'
+    retired: true
   - name: 'EarthPortal'
     link: https://earthportal.eu/
     description: "A semantic artefact repository dedicated to Earth sciences"
@@ -84,7 +86,19 @@ alliance_members:
     description: "A vocabulary and ontology repository for astronomy and related domains"
     logo: '/images/alliance_member_logos/ontoportal-astro.png'
     color: '#624ECF'
-    
+  - name: 'LovPortal'
+    description: "A gateway to reusable semantic vocabularies on the Web"
+    coming: true
+  - name: 'HSPortal'
+    description: "The home of ontologies and semantic artefacts in Heritage Science."
+    coming: true
+  - name: 'CHPortal'
+    description: "ECHOES repository of Cultural Heritage ontologies"
+    coming: true
+  - name: 'SocioPortal'
+    description: "CESSDA repository of social sciences ontologies and semantic artefacts"
+    coming: true
+
 sponsors:
   - acronym: 'D2KAB'
     logo: https://agroportal.lirmm.fr/assets/logos/collaboration/d2kab_logo-5155645cfcfe00890f3cad2307ca7975a1ff43b841755002830c99aba060a9e5.png
