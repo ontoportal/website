@@ -273,11 +273,49 @@ description: Ontology Repositories or Semantic Artefact Catalogues with the Onto
 				<h2>Be part of a <strong>community</strong></h2>
 			</div>
 
+			<style>
+				.portal-badge {
+					display: inline-block;
+					font-size: 0.68em;
+					font-weight: 600;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					padding: 2px 7px;
+					border-radius: 4px;
+					vertical-align: middle;
+					margin-left: 5px;
+				}
+				.portal-badge-retired { background: #f3dede; color: #a33; }
+				.portal-badge-coming  { background: #ddeeff; color: #1a6aaa; }
+				.portal-coming-box {
+					height: 100px;
+					background-color: #d8d8d8;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 200px;
+					border-radius: 200px;
+					margin: 25px auto 0px;
+				}
+				.portal-coming-box span {
+					color: #888;
+					font-size: 0.85em;
+					font-style: italic;
+				}
+			</style>
 			<ul class="staff">
 				{% for portal in site.alliance_members %}
 				<li>
+					{% if portal.coming %}
+					<div class="portal-coming-box"><span>coming soon</span></div>
+					<div class="name">{{ portal.name }} <span class="portal-badge portal-badge-coming">coming</span></div>
+					{% elsif portal.retired %}
+					<div style="height: 100px;background-color:{{portal.color}}" class="square-image"><img src="{% include relative-src.html src=portal.logo %}" alt="{{ portal.name }}" style="object-fit: contain;width: 200px; height: 100px; opacity: 0.7;"/></div>
+					<div class="name"><a target="_blank" href="{{ portal.link }}" style="color: black">{{ portal.name }}</a> <span class="portal-badge portal-badge-retired">retired</span></div>
+					{% else %}
 					<div style="height: 100px;background-color:{{portal.color}}" class="square-image"><img src="{% include relative-src.html src=portal.logo %}" alt="{{ portal.name }}" style="object-fit: contain;width: 200px; height: 100px"/></div>
 					<div class="name"><a target="_blank" href="{{ portal.link }}" style="color: black">{{ portal.name }}</a></div>
+					{% endif %}
 					<div class="position">{{ portal.description }}</div>
 				</li>
 				{% endfor %}
