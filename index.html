@@ -289,8 +289,46 @@ description: Ontology Repositories or Semantic Artefact Catalogues with the Onto
 	</section>
 
 	<section style="display: flex; justify-content: center">
-        <iframe title="OntoPortal tweets" style="border:none; margin: 10px; width: 60%; height: 80vh" data-tweet-url="https://twitter.com/ontoportal" src="data:text/html;charset=utf-8,%3Ca%20class%3D%22twitter-timeline%22%20href%3D%22https%3A//twitter.com/ontoportal%3Fref_src%3Dtwsrc%255Etfw%22%3ETweets%20by%20ontoportal%3C/a%3E%0A%3Cscript%20async%20src%3D%22https%3A//platform.twitter.com/widgets.js%22%20charset%3D%22utf-8%22%3E%3C/script%3E%0A">
-        </iframe>
+		<div style="width: 60%; margin: 10px;">
+			<div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 16px;">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530" style="width:24px;height:24px;fill:#0085ff"><path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/></svg>
+				<h3 style="margin:0; font-size: 1.1em;">OntoPortal on Bluesky</h3>
+			</div>
+			<div id="bsky-feed" style="display: flex; flex-direction: column; gap: 12px;"></div>
+			<div style="text-align: center; margin-top: 16px;">
+				<a href="https://bsky.app/profile/ontoportal.bsky.social" target="_blank" style="color: #0085ff; font-size: 0.9em;">View profile on Bluesky →</a>
+			</div>
+		</div>
+		<script>
+			fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=ontoportal.bsky.social&limit=5')
+				.then(r => r.json())
+				.then(data => {
+					const feed = document.getElementById('bsky-feed');
+					(data.feed || []).forEach(item => {
+						const post = item.post;
+						const text = post.record.text;
+						const date = new Date(post.record.createdAt).toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'});
+						const uri = post.uri.replace('at://did:plc:', 'https://bsky.app/profile/').replace('/app.bsky.feed.post/', '/post/');
+						const atUri = post.uri;
+						const rkey = atUri.split('/').pop();
+						const postUrl = `https://bsky.app/profile/ontoportal.bsky.social/post/${rkey}`;
+						const card = document.createElement('div');
+						card.style.cssText = 'border:1px solid #e0e0e0; border-radius:8px; padding:14px 16px; background:#fff;';
+						card.innerHTML = `
+							<div style="font-size:0.92em; line-height:1.5; color:#1a1a1a;">${text.replace(/\n/g, '<br>')}</div>
+							<div style="margin-top:8px; font-size:0.8em; color:#888;">
+								<a href="${postUrl}" target="_blank" style="color:#0085ff; text-decoration:none;">${date}</a>
+							</div>`;
+						feed.appendChild(card);
+					});
+					if (!data.feed || data.feed.length === 0) {
+						feed.innerHTML = '<p style="text-align:center;color:#888;">No posts yet.</p>';
+					}
+				})
+				.catch(() => {
+					document.getElementById('bsky-feed').innerHTML = '<p style="text-align:center;color:#888;">Unable to load feed.</p>';
+				});
+		</script>
 	</section>
 
 	<section  class="bottom-cta">
