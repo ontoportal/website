@@ -1,0 +1,140 @@
+[
+  {
+    "acronym": "BioPortal",
+    "name": "BioPortal",
+    "link": "https://bioportal.bioontology.org/",
+    "logo": "/images/alliance_member_logos/bioportal.png",
+    "color": "#234979",
+    "description": "The world's most comprehensive repository of biomedical ontologies",
+    "status": "production",
+    "federation": false
+  },
+  {
+    "acronym": "SIFRBioPortal",
+    "name": "SIFR BioPortal",
+    "link": "https://bioportal.lirmm.fr/",
+    "logo": "/images/alliance_member_logos/sifr_bioportal.png",
+    "color": "#74a9cb",
+    "description": "A repository for French biomedical terminologies and ontologies",
+    "status": "retired",
+    "federation": false
+  },
+  {
+    "acronym": "AgroPortal",
+    "name": "AgroPortal",
+    "link": "https://agroportal.lirmm.fr/",
+    "logo": "/images/alliance_member_logos/agroportal.png",
+    "color": "#31b403",
+    "description": "A vocabulary and ontology repository for agronomy and related domains",
+    "status": "production",
+    "federation": true
+  },
+  {
+    "acronym": "EcoPortal",
+    "name": "EcoPortal",
+    "link": "https://ecoportal.lifewatch.eu/",
+    "logo": "/images/alliance_member_logos/ecoportal.png",
+    "color": "#0d508a",
+    "description": "The LifeWatch ERIC repository of semantic resources for ecology and related domains",
+    "status": "production",
+    "federation": true
+  },
+  {
+    "acronym": "MedPortal",
+    "name": "MedPortal",
+    "link": "http://medportal.bmicc.cn/",
+    "logo": "/images/alliance_member_logos/medportal.png",
+    "color": "#234979",
+    "description": "A repository for Chinese biomedical terminologies and ontologies",
+    "status": "production",
+    "federation": false
+  },
+  {
+    "acronym": "MatPortal",
+    "name": "MatPortal",
+    "link": "https://matportal.org/",
+    "logo": "/images/alliance_member_logos/matportal.png",
+    "color": "#009574",
+    "description": "The ontology repository for materials science",
+    "status": "production",
+    "federation": false
+  },
+  {
+    "acronym": "IndustryPortal",
+    "name": "IndustryPortal",
+    "link": "http://industryportal.enit.fr/",
+    "logo": "/images/alliance_member_logos/industryportal.png",
+    "color": "#1c0f5d",
+    "description": "A common ontology portal for industry and related domains",
+    "status": "retired",
+    "federation": false
+  },
+  {
+    "acronym": "EarthPortal",
+    "name": "EarthPortal",
+    "link": "https://earthportal.eu/",
+    "logo": "/images/alliance_member_logos/earthportal.png",
+    "color": "#1e2251",
+    "description": "A semantic artefact repository dedicated to Earth sciences",
+    "status": "production",
+    "federation": true
+  },
+  {
+    "acronym": "BiodivPortal",
+    "name": "BiodivPortal",
+    "link": "https://biodivportal.gfbio.org/",
+    "logo": "/images/alliance_member_logos/biodivportal.png",
+    "color": "#33691B",
+    "description": "A semantic artefact repository for biodiversity",
+    "status": "production",
+    "federation": true
+  },
+  {
+    "acronym": "TechnoPortal",
+    "name": "TechnoPortal",
+    "link": "https://technoportal.hevs.ch/",
+    "logo": "/images/alliance_member_logos/technoportal.png",
+    "color": "#9C4E81",
+    "description": "A repository for the technology sciences domain",
+    "status": "production",
+    "federation": false
+  },
+  {
+    "acronym": "OntoPortal-Astro",
+    "name": "Ontoportal-Astro",
+    "link": "https://ontoportal-astro.eu/",
+    "logo": "/images/alliance_member_logos/ontoportal-astro.png",
+    "color": "#624ECF",
+    "description": "A vocabulary and ontology repository for astronomy and related domains",
+    "status": "production",
+    "federation": false
+  },
+  {
+    "acronym": "LovPortal",
+    "name": "LovPortal",
+    "description": "A gateway to reusable semantic vocabularies on the Web",
+    "status": "coming",
+    "federation": false
+  },
+  {
+    "acronym": "HSPortal",
+    "name": "HSPortal",
+    "description": "The home of ontologies and semantic artefacts in Heritage Science.",
+    "status": "coming",
+    "federation": false
+  },
+  {
+    "acronym": "CHPortal",
+    "name": "CHPortal",
+    "description": "ECHOES repository of Cultural Heritage ontologies",
+    "status": "coming",
+    "federation": false
+  },
+  {
+    "acronym": "SocioPortal",
+    "name": "SocioPortal",
+    "description": "CESSDA repository of social sciences ontologies and semantic artefacts",
+    "status": "coming",
+    "federation": false
+  }
+]

@@ -304,12 +304,12 @@ description: Ontology Repositories or Semantic Artefact Catalogues with the Onto
 				}
 			</style>
 			<ul class="staff">
-				{% for portal in site.alliance_members %}
+				{% for portal in site.data.portals %}
 				<li>
-					{% if portal.coming %}
+					{% if portal.status == "coming" %}
 					<div class="portal-coming-box"><span>coming soon</span></div>
 					<div class="name">{{ portal.name }} <span class="portal-badge portal-badge-coming">coming</span></div>
-					{% elsif portal.retired %}
+					{% elsif portal.status == "retired" %}
 					<div style="height: 100px;background-color:{{portal.color}}" class="square-image"><img src="{% include relative-src.html src=portal.logo %}" alt="{{ portal.name }}" style="object-fit: contain;width: 200px; height: 100px; opacity: 0.7;"/></div>
 					<div class="name"><a target="_blank" href="{{ portal.link }}" style="color: black">{{ portal.name }}</a> <span class="portal-badge portal-badge-retired">retired</span></div>
 					{% else %}

@@ -1,0 +1,26 @@
+---
+layout: null
+---
+{
+  "@context": {
+    "acronym": "https://w3id.org/mod#acronym",
+    "color": "https://schema.org/color",
+    "description": "http://purl.org/dc/terms/description",
+    "status": "https://w3id.org/mod#status",
+    "federation": "http://data.bioontology.org/metadata/federation"
+  },
+  "@graph": [
+    {% for portal in site.data.portals %}
+    {
+      {% if portal.link %}"@id": "{{ portal.link }}",
+      {% endif %}"@type": "https://w3id.org/mod#SemanticArtefactCatalog",
+      "acronym": "{{ portal.acronym }}",
+      {% if portal.color %}"color": "{{ portal.color }}",
+      {% endif %}"description": "{{ portal.description }}",
+      "status": "{{ portal.status }}",
+      "federation": {{ portal.federation }}
+    }{% unless forloop.last %},{% endunless %}
+
+    {% endfor %}
+  ]
+}
