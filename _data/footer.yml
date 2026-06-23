@@ -29,3 +29,7 @@
     link: https://github.com/orgs/ontoportal/teams
     social_icon: GitHub
     new_window: true
+  - name: Zenodo
+    link: https://zenodo.org/communities/ontoportal
+    social_icon: Zenodo
+    new_window: true
