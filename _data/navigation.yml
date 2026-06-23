@@ -2,6 +2,10 @@
   link: /about/
   new_window: false
   highlight: false
+- name: Federation
+  link: /federation/
+  new_window: false
+  highlight: false
 - name: Blog
   link: /blog/
   new_window: false
