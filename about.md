@@ -48,13 +48,21 @@ description: Dedicated to promoting semantic services.
 
 ## Our <strong>roadmap</strong>
 
-<p class="subtext editable"> In 2022, we launched an annual 3-day-workshop that we see as key to fostering our growing community.<br> <a href="https://hal.science/hal-04087929" target="_blank"> See the report of the 2022 edition. </a> </p>
+<p class="subtext editable"> Since 2022, we hold an annual workshop that we see as key to fostering our growing community. The workshop brings together Alliance members and invited guests for several days of technical, content, and management sessions, and features public events open to the broader semantic web community. </p>
+
+<p class="subtext editable">
+  <strong>Workshop 2022</strong> — Montpellier, France (Sept. 26-29, 2022). <a href="https://hal.science/hal-04087929" target="_blank">Report (HAL)</a><br>
+  <strong>Workshop 2023</strong> — Lecce, Italy (Sept. 26-29, 2023). <a href="https://hal.science/hal-04494573" target="_blank">Report (HAL)</a><br>
+  <strong>Workshop 2024</strong> — Stanford, USA (Sept. 23-26, 2024). <a href="https://hal.science/hal-04891214" target="_blank">Report (HAL)</a><br>
+  <strong>Workshop 2025</strong> — Berlin, Germany (Sept. 29 – Oct. 3, 2025). <a href="https://hal.inrae.fr/hal-05633274v1" target="_blank">Report (HAL)</a><br>
+  <strong>Workshop 2026</strong> — Paris, France (Sept. 21-25, 2026) — <em>upcoming</em>.
+</p>
 
 <p class="subtext editable"> The Alliance relies on the support provided by each project deploying an installation. We have implemented a free licensing system that we use to trace the many applications of the technology. In some cases, if the Alliance collaborates with industry or the private sector, we discuss the appropriate terms and conditions and possible financial participation. </p>
 
 ## Our <strong>community</strong>
 <div>
-	<img src="{{ site.baseurl }}/images/workshop2022-group-photo.png" alt="Screenshot" />
+	<img src="{{ site.baseurl }}/images/workshops-montage.jpg" alt="OntoPortal Workshop group photos 2022-2025" style="width:100%" />
 </div>
 
 <p class="subtext editable"> Beyond the domain-specific portals, the OntoPortal technology is deployed by many external parties with other objectives. For instance, hospitals reuse the technology in-house to use services such as the Annotator on sensitive data. <br>
