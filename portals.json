@@ -7,7 +7,8 @@ layout: null
     "color": "https://schema.org/color",
     "description": "http://purl.org/dc/terms/description",
     "status": "https://w3id.org/mod#status",
-    "federation": "http://data.bioontology.org/metadata/federation"
+    "federation": "http://data.bioontology.org/metadata/federation",
+    "api_url": "http://data.bioontology.org/metadata/rest_url"
   },
   "@graph": [
     {% for portal in site.data.portals %}
@@ -18,7 +19,11 @@ layout: null
       {% if portal.color %}"color": "{{ portal.color }}",
       {% endif %}"description": "{{ portal.description }}",
       "status": "{{ portal.status }}",
-      "federation": {{ portal.federation }}
+      "federation": {{ portal.federation }}{% if portal.api_url %},
+      "api_url": {
+        "@id": "{{ portal.api_url }}",
+        "@type": "https://schema.org/WebAPI"
+      }{% endif %}
     }{% unless forloop.last %},{% endunless %}
 
     {% endfor %}
