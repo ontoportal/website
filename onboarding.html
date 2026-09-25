@@ -192,9 +192,8 @@ permalink: /onboarding/
   <input type="email" id="ob-email" name="email" required placeholder="your@email.com">
 
   <label for="ob-portal">OntoPortal instance / portal <span style="color:#c0392b">*</span></label>
-  <div class="ob-hint">The portal(s) you are associated with. Select all that apply.</div>
-  <select id="ob-portal" name="portal" required onchange="obToggleOther(this)">
-    <option value="">— Select a portal —</option>
+  <div class="ob-hint">The portal(s) you are associated with. Hold <kbd>Ctrl</kbd> / <kbd>⌘</kbd> to select multiple.</div>
+  <select id="ob-portal" name="portal" multiple size="8" required onchange="obToggleOther(this)" style="max-width:520px;width:100%;padding:4px 6px;border:1px solid #c8d4e4;border-radius:4px;font-size:.95em;color:#2a3a50;background:#fff;">
     <option>AgroPortal</option>
     <option>BiodivPortal</option>
     <option>BioPortal</option>
@@ -295,7 +294,7 @@ permalink: /onboarding/
     </div>
   </a>
 
-  <a href="mailto:ontoportal-dev@lists.stanford.edu" class="ob-resource-link">
+  <a href="https://mailman.stanford.edu/mailman/listinfo/ontoportal-dev" target="_blank" class="ob-resource-link">
     <!-- Envelope + code icon -->
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="2" y="4" width="20" height="16" rx="2" stroke="#009574" stroke-width="1.8" fill="#e6f7f4"/>
@@ -340,7 +339,8 @@ var GAS_ENDPOINT = 'YOUR_GAS_DEPLOYMENT_URL_HERE';
 
 function obToggleOther(sel) {
   var div = document.getElementById('ob-other-div');
-  if (sel.value === 'Other') div.classList.add('visible');
+  var selected = Array.from(sel.selectedOptions).map(o => o.value);
+  if (selected.includes('Other')) div.classList.add('visible');
   else div.classList.remove('visible');
 }
 
@@ -352,8 +352,12 @@ function obSubmit(e) {
   // Gather values
   var name    = document.getElementById('ob-name').value.trim();
   var email   = document.getElementById('ob-email').value.trim();
-  var portal  = document.getElementById('ob-portal').value;
-  if (portal === 'Other') portal = document.getElementById('ob-other').value.trim() || 'Other';
+  var portalSel = Array.from(document.getElementById('ob-portal').selectedOptions).map(o => o.value);
+  var portal = portalSel.filter(v => v !== 'Other').join(', ');
+  if (portalSel.includes('Other')) {
+    var other = document.getElementById('ob-other').value.trim();
+    portal = portal ? portal + ', ' + (other || 'Other') : (other || 'Other');
+  }
 
   var fonctions = Array.from(document.querySelectorAll('input[name="fonction"]:checked')).map(c=>c.value).join(', ');
   var google    = document.getElementById('ob-google').value.trim();
