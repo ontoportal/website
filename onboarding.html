@@ -1,0 +1,396 @@
+---
+title: Onboarding — Join the OntoPortal Alliance
+description: Register as a new Alliance member
+layout: page
+sitemap: false
+robots: noindex, nofollow
+permalink: /onboarding/
+---
+
+<style>
+/* ── Onboarding page styles ───────────────────────────────────────── */
+.ob-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.ob-hero img {
+  height: 72px;
+  width: 72px;
+  flex-shrink: 0;
+}
+.ob-intro {
+  background: #f4f8ff;
+  border-left: 4px solid #1a6aaa;
+  padding: 1.1em 1.4em;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-size: .97em;
+  line-height: 1.7;
+  color: #2a3a50;
+}
+.ob-intro strong { color: #1a6aaa; }
+
+.ob-section-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #1a6aaa;
+  border-bottom: 2px solid #e0e8f4;
+  padding-bottom: 6px;
+  margin: 36px 0 20px;
+}
+
+/* Form */
+.ob-form label {
+  display: block;
+  font-weight: 600;
+  margin: 16px 0 4px;
+  font-size: .93em;
+  color: #2a3a50;
+}
+.ob-form .ob-hint {
+  font-size: .82em;
+  color: #6a7e98;
+  margin: 2px 0 6px;
+  font-weight: 400;
+}
+.ob-form input[type="text"],
+.ob-form input[type="email"],
+.ob-form select {
+  width: 100%;
+  max-width: 520px;
+  padding: 8px 10px;
+  border: 1px solid #c8d4e4;
+  border-radius: 4px;
+  font-size: .95em;
+  color: #2a3a50;
+  background: #fff;
+  box-sizing: border-box;
+}
+.ob-form input:focus, .ob-form select:focus {
+  outline: none;
+  border-color: #1a6aaa;
+  box-shadow: 0 0 0 2px rgba(26,106,170,0.12);
+}
+.ob-form .ob-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 4px;
+}
+.ob-form .ob-checks label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  margin: 0;
+  cursor: pointer;
+  font-size: .93em;
+}
+.ob-form .ob-checks input[type="checkbox"] {
+  width: auto;
+  accent-color: #1a6aaa;
+}
+.ob-other-field { margin-top: 10px; display: none; }
+.ob-other-field.visible { display: block; }
+.ob-submit {
+  margin-top: 24px;
+  background: #1a6aaa;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.ob-submit:hover { background: #145090; }
+.ob-submit:disabled { background: #8aabb8; cursor: default; }
+#ob-status {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: .93em;
+  display: none;
+}
+#ob-status.success { background: #e6f4ea; color: #1e6b35; border: 1px solid #a8d5b5; display: block; }
+#ob-status.error   { background: #fdecea; color: #8b2020; border: 1px solid #e8b4b4; display: block; }
+
+/* Resources grid */
+.ob-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.ob-resource-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #d0dced;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #2a3a50;
+  background: #fff;
+  transition: border-color .15s, box-shadow .15s;
+}
+.ob-resource-link:hover {
+  border-color: #1a6aaa;
+  box-shadow: 0 2px 8px rgba(26,106,170,0.10);
+  text-decoration: none;
+  color: #1a6aaa;
+}
+.ob-resource-link svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+.ob-resource-link .ob-res-text strong {
+  display: block;
+  font-size: .93em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.ob-resource-link .ob-res-text span {
+  font-size: .80em;
+  color: #6a7e98;
+  line-height: 1.3;
+}
+</style>
+
+<!-- Hero with logo -->
+<div class="ob-hero">
+  <img src="{{ site.baseurl }}/images/alliance_logo.png" alt="OntoPortal Alliance logo">
+  <div>
+    <h3 style="margin:0 0 4px;color:#1a6aaa;">Welcome to the OntoPortal Alliance</h3>
+    <p style="margin:0;font-size:.93em;color:#5a6e86;">Complete the form below to register and access member resources.</p>
+  </div>
+</div>
+
+<div class="ob-intro">
+  The <strong>OntoPortal Alliance</strong> is an informal, open and voluntary community gathering organisations and
+  individuals who build, deploy or maintain semantic artefact catalogues using the
+  <a href="https://ontoportal.org" target="_blank">OntoPortal technology</a>.
+  Membership is <strong>free</strong> and simply reflects the shared use of OntoPortal — whether for a running portal,
+  a prototype, a development project or a research activity.
+  Together we coordinate software development, share best practices and work towards interoperability between portals.
+  There is no formal commitment: joining means being part of the conversation.
+</div>
+
+<!-- ── REGISTRATION FORM ──────────────────────────────────────── -->
+<div class="ob-section-title">Register as an Alliance member</div>
+
+<form class="ob-form" id="ob-form" onsubmit="obSubmit(event)">
+
+  <label for="ob-name">Full name <span style="color:#c0392b">*</span></label>
+  <input type="text" id="ob-name" name="name" required placeholder="Your name">
+
+  <label for="ob-email">Email address <span style="color:#c0392b">*</span></label>
+  <input type="email" id="ob-email" name="email" required placeholder="your@email.com">
+
+  <label for="ob-portal">OntoPortal instance / portal <span style="color:#c0392b">*</span></label>
+  <div class="ob-hint">The portal(s) you are associated with. Hold <kbd>Ctrl</kbd> / <kbd>⌘</kbd> to select multiple.</div>
+  <select id="ob-portal" name="portal" multiple size="8" required onchange="obToggleOther(this)" style="max-width:520px;width:100%;padding:4px 6px;border:1px solid #c8d4e4;border-radius:4px;font-size:.95em;color:#2a3a50;background:#fff;">
+    <option>AgroPortal</option>
+    <option>BiodivPortal</option>
+    <option>BioPortal</option>
+    <option>CHPortal</option>
+    <option>EarthPortal</option>
+    <option>EcoPortal</option>
+    <option>HSPortal</option>
+    <option>IndustryPortal</option>
+    <option>LovPortal</option>
+    <option>MatPortal</option>
+    <option>MedPortal</option>
+    <option>OntoPortal-Astro</option>
+    <option>SIFR BioPortal</option>
+    <option>SocioPortal</option>
+    <option>TechnoPortal</option>
+    <option value="Other">Other / New portal</option>
+  </select>
+  <div class="ob-other-field" id="ob-other-div">
+    <input type="text" id="ob-other" name="portal_other" placeholder="Portal name (if Other)">
+  </div>
+
+  <label>Function / role</label>
+  <div class="ob-hint">Select all that apply.</div>
+  <div class="ob-checks">
+    <label><input type="checkbox" name="fonction" value="Management"> Management</label>
+    <label><input type="checkbox" name="fonction" value="Governance"> Governance</label>
+    <label><input type="checkbox" name="fonction" value="Developer"> Developer</label>
+    <label><input type="checkbox" name="fonction" value="Devops"> Devops</label>
+    <label><input type="checkbox" name="fonction" value="Curation"> Curation</label>
+  </div>
+
+  <label for="ob-google">Google account email</label>
+  <div class="ob-hint">Used to grant access to shared Google Drive and Docs.</div>
+  <input type="email" id="ob-google" name="google_account" placeholder="your-google@gmail.com">
+
+  <label for="ob-github">GitHub username</label>
+  <div class="ob-hint">Used to add you to the OntoPortal GitHub organisation.</div>
+  <input type="text" id="ob-github" name="github_account" placeholder="your-github-username">
+
+  <label>Requested mailing list registration</label>
+  <div class="ob-hint">You will receive a confirmation email once added.</div>
+  <div class="ob-checks">
+    <label><input type="checkbox" name="mailing_lists" value="Management"> Management list<br>
+      <small style="color:#8898aa;margin-left:22px;">ontoportal-alliance@lists.stanford.edu</small></label>
+    <label><input type="checkbox" name="mailing_lists" value="Developers"> Developers list<br>
+      <small style="color:#8898aa;margin-left:22px;">ontoportal-dev@lists.stanford.edu</small></label>
+    <label><input type="checkbox" name="mailing_lists" value="Support"> Support list</label>
+  </div>
+
+  <button type="submit" class="ob-submit" id="ob-submit-btn">Submit registration</button>
+  <div id="ob-status"></div>
+</form>
+
+<!-- ── RESOURCES ──────────────────────────────────────────────── -->
+<div class="ob-section-title">Member resources &amp; next steps</div>
+
+<div class="ob-resources">
+
+  <a href="https://drive.google.com/drive/u/0/folders/0AMcyGWPUmi4XUk9PVA" target="_blank" class="ob-resource-link">
+    <!-- Google Drive icon -->
+    <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+      <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+      <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+      <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+      <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+      <path d="m59.8 53h-32.3l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="#2684fc"/>
+      <path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 28h27.45c0-1.55-.4-3.1-1.2-4.5z" fill="#ffba00"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Access Alliance Google Drive</strong>
+      <span>Shared documents, presentations &amp; resources</span>
+    </div>
+  </a>
+
+  <a href="https://ontoportalalliance.slack.com/" target="_blank" class="ob-resource-link">
+    <!-- Slack icon -->
+    <svg viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26.1 77.5a12.6 12.6 0 0 1-12.6 12.6A12.6 12.6 0 0 1 .9 77.5a12.6 12.6 0 0 1 12.6-12.6H26.1zm6.3 0a12.6 12.6 0 0 1 12.6-12.6 12.6 12.6 0 0 1 12.6 12.6v31.4a12.6 12.6 0 0 1-12.6 12.6 12.6 12.6 0 0 1-12.6-12.6z" fill="#e01e5a"/>
+      <path d="M45 26a12.6 12.6 0 0 1-12.6-12.6A12.6 12.6 0 0 1 45 .8a12.6 12.6 0 0 1 12.6 12.6V26zm0 6.3a12.6 12.6 0 0 1 12.6 12.6 12.6 12.6 0 0 1-12.6 12.6H13.5A12.6 12.6 0 0 1 .9 44.9a12.6 12.6 0 0 1 12.6-12.6z" fill="#36c5f0"/>
+      <path d="M96.8 44.9a12.6 12.6 0 0 1 12.6-12.6 12.6 12.6 0 0 1 12.6 12.6 12.6 12.6 0 0 1-12.6 12.6H96.8zm-6.3 0a12.6 12.6 0 0 1-12.6 12.6 12.6 12.6 0 0 1-12.6-12.6V13.4A12.6 12.6 0 0 1 77.9.8a12.6 12.6 0 0 1 12.6 12.6z" fill="#2eb67d"/>
+      <path d="M77.9 96.8a12.6 12.6 0 0 1 12.6 12.6 12.6 12.6 0 0 1-12.6 12.6 12.6 12.6 0 0 1-12.6-12.6V96.8zm0-6.3a12.6 12.6 0 0 1-12.6-12.6 12.6 12.6 0 0 1 12.6-12.6h31.5a12.6 12.6 0 0 1 12.6 12.6 12.6 12.6 0 0 1-12.6 12.6z" fill="#ecb22e"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Request access to Slack</strong>
+      <span>OntoPortal Alliance workspace</span>
+    </div>
+  </a>
+
+  <a href="https://mailman.stanford.edu/mailman/listinfo/ontoportal-alliance" target="_blank" class="ob-resource-link">
+    <!-- Envelope icon -->
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="4" width="20" height="16" rx="2" stroke="#1a6aaa" stroke-width="1.8" fill="#e8f0fa"/>
+      <path d="M2 7l10 7 10-7" stroke="#1a6aaa" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Management mailing list</strong>
+      <span>ontoportal-alliance@lists.stanford.edu</span>
+    </div>
+  </a>
+
+  <a href="https://mailman.stanford.edu/mailman/listinfo/ontoportal-dev" target="_blank" class="ob-resource-link">
+    <!-- Envelope + code icon -->
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="4" width="20" height="16" rx="2" stroke="#009574" stroke-width="1.8" fill="#e6f7f4"/>
+      <path d="M2 7l10 7 10-7" stroke="#009574" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M9 13.5l-2 2 2 2M15 13.5l2 2-2 2" stroke="#009574" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Developers mailing list</strong>
+      <span>ontoportal-dev@lists.stanford.edu</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/ontoportal" target="_blank" class="ob-resource-link">
+    <!-- GitHub icon -->
+    <svg viewBox="0 0 24 24" fill="#24292e" xmlns="http://www.w3.org/2000/svg" style="background:#f0f0f0;border-radius:50%;padding:2px;">
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.99-.4 3.01-.4 1.02 0 2.05.13 3.01.4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Follow us on GitHub</strong>
+      <span>github.com/ontoportal</span>
+    </div>
+  </a>
+
+  <a href="mailto:support@ontoportal.org" class="ob-resource-link">
+    <!-- Support icon -->
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="9" stroke="#9C4E81" stroke-width="1.8" fill="#f8edf5"/>
+      <path d="M9 9a3 3 0 0 1 6 0c0 2-3 3-3 5" stroke="#9C4E81" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="12" cy="17.5" r=".8" fill="#9C4E81"/>
+    </svg>
+    <div class="ob-res-text">
+      <strong>Reach out by email</strong>
+      <span>support@ontoportal.org</span>
+    </div>
+  </a>
+
+</div>
+
+<script>
+// Replace with your deployed Google Apps Script URL after deployment
+var GAS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzf1wZqxkC6ZDKs0sa3NUbEQeiR9K_n2gkoVNahubHulBCQKLNEr3-XTJod-jqbCqPudw/exec';
+
+function obToggleOther(sel) {
+  var div = document.getElementById('ob-other-div');
+  var selected = Array.from(sel.selectedOptions).map(o => o.value);
+  if (selected.includes('Other')) div.classList.add('visible');
+  else div.classList.remove('visible');
+}
+
+function obSubmit(e) {
+  e.preventDefault();
+  var btn = document.getElementById('ob-submit-btn');
+  var status = document.getElementById('ob-status');
+
+  // Gather values
+  var name    = document.getElementById('ob-name').value.trim();
+  var email   = document.getElementById('ob-email').value.trim();
+  var portalSel = Array.from(document.getElementById('ob-portal').selectedOptions).map(o => o.value);
+  var portal = portalSel.filter(v => v !== 'Other').join(', ');
+  if (portalSel.includes('Other')) {
+    var other = document.getElementById('ob-other').value.trim();
+    portal = portal ? portal + ', ' + (other || 'Other') : (other || 'Other');
+  }
+
+  var fonctions = Array.from(document.querySelectorAll('input[name="fonction"]:checked')).map(c=>c.value).join(', ');
+  var google    = document.getElementById('ob-google').value.trim();
+  var github    = document.getElementById('ob-github').value.trim();
+  var mlists    = Array.from(document.querySelectorAll('input[name="mailing_lists"]:checked')).map(c=>c.value).join(', ');
+
+  if (GAS_ENDPOINT === 'YOUR_GAS_DEPLOYMENT_URL_HERE') {
+    status.className = 'error';
+    status.textContent = 'Configuration error: GAS endpoint not set. Please contact the administrator.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting…';
+  status.className = '';
+  status.style.display = 'none';
+
+  var params = new URLSearchParams({name, email, portal, fonction: fonctions,
+    google_account: google, github_account: github, mailing_lists: mlists});
+
+  fetch(GAS_ENDPOINT + '?' + params.toString(), {mode: 'no-cors'})
+    .then(function() {
+      btn.disabled = false;
+      btn.textContent = 'Submit registration';
+      status.className = 'success';
+      status.textContent = '✓ Registration submitted! You will be contacted shortly.';
+      document.getElementById('ob-form').reset();
+    })
+    .catch(function(err) {
+      btn.disabled = false;
+      btn.textContent = 'Submit registration';
+      status.className = 'error';
+      status.textContent = 'Submission failed. Please try again or contact support@ontoportal.org.';
+    });
+}
+</script>
