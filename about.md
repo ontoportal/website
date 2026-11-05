@@ -18,7 +18,7 @@ description: Dedicated to promoting semantic services.
 <p class="subtext editable">Teams in the Alliance develop and maintain several <strong>openly accessible ontology repositories and semantic artefact catalogues</strong>. These ontology repositories include BioPortal, the primary and historical source of OntoPortal code, but also AgroPortal, EcoPortal, MatPortal and more...</p>
 
 <div>
-	<img src="{{ site.baseurl }}/images/OntoPortalInstances_v3.png" alt="Screenshot" />
+	<img src="{{ site.baseurl }}/images/ontoportal-alliance-map-light.png" alt="The OntoPortal Alliance map" />
 </div>
 
 <p class="subtext editable"> Many researchers use services of the <strong>OntoPortal virtual appliance</strong> in dozens of local installations with content and capabilities tailored to their own research needs. Several teams also use OntoPortal to host public <strong>semantic artefact catalogues</strong> and are banding together to advance development and community support for this <strong>key semantic tool</strong>. </p>
