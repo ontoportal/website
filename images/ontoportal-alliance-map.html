@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>OntoPortal Alliance Map</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap">
 <style>
@@ -23,10 +24,11 @@ const PORTALS = [
   {name:"BiodivPortal",    lines:["Biodiv","Portal"],     domain:"Biodiversity",           org:"GFBio · InfAI",    color:"#33691B",status:"production",fed:true, angle:108, r:285,nr:60},
   // Non-federated production — outer ring
   {name:"BioPortal",       lines:["BioPortal"],           domain:"Biomedical Ontologies",  org:"NCBO · Stanford",  color:"#234979",status:"production",fed:false,angle:138, r:375,nr:54},
-  {name:"MedPortal",       lines:["MedPortal"],           domain:"Chinese Biomedicine",    org:"BMICC",            color:"#1a5276",status:"production",fed:false,angle:162, r:375,nr:54},
-  {name:"MatPortal",       lines:["MatPortal"],           domain:"Materials Science",       org:"BAM · Fraunhofer", color:"#009574",status:"production",fed:false,angle:188, r:375,nr:54},
-  {name:"TechnoPortal",    lines:["Techno","Portal"],     domain:"Technology Sciences",    org:"HES-SO",           color:"#9C4E81",status:"production",fed:false,angle:214, r:375,nr:54},
-  {name:"OntoPortal Astro",lines:["OntoPortal","Astro"],  domain:"Astronomy",              org:"Obs Paris",        color:"#624ECF",status:"production",fed:false,angle:240, r:375,nr:54},
+  {name:"MedPortal",       lines:["MedPortal"],           domain:"Chinese Biomedicine",    org:"BMICC",            color:"#1a5276",status:"production",fed:false,angle:159, r:375,nr:54},
+  {name:"MatPortal",       lines:["MatPortal"],           domain:"Materials Science",       org:"BAM · Fraunhofer", color:"#009574",status:"production",fed:false,angle:180, r:375,nr:54},
+  {name:"TechnoPortal",    lines:["Techno","Portal"],     domain:"Technology Sciences",    org:"HES-SO",           color:"#9C4E81",status:"production",fed:false,angle:201, r:375,nr:54},
+  {name:"OntoPortal Astro",lines:["OntoPortal","Astro"],  domain:"Astronomy",              org:"Obs Paris",        color:"#624ECF",status:"production",fed:false,angle:222, r:375,nr:54},
+  {name:"TermPortal",     lines:["TermPortal"],          domain:"Terminology (OntoLex-Lemon)",org:"UPM · TeresIA",  color:"#322882",status:"production",fed:false,angle:243, r:375,nr:54},
   // Retired — mid ring
   {name:"SIFR BioPortal",  lines:["SIFR","BioPortal"],   domain:"French Biomedicine",     org:"LIRMM · INRIA",    color:"#74a9cb",status:"retired",   fed:false,angle:262, r:325,nr:52},
   {name:"IndustryPortal",  lines:["Industry","Portal"],   domain:"Industry",               org:"ENIT",             color:"#4040a0",status:"retired",   fed:false,angle:284, r:325,nr:52},
@@ -127,7 +129,7 @@ function drawHub(ctx){
   ctx.font='700 15px Syne,sans-serif';ctx.fillText('OntoPortal',CX,CY-14);
   ctx.font='700 13px Syne,sans-serif';ctx.fillText('Alliance',CX,CY+2);
   ctx.font='400 10px DM Sans,sans-serif';ctx.fillStyle='rgba(255,255,255,0.6)';
-  ctx.fillText('15 portals',CX,CY+18);
+  ctx.fillText('16 portals',CX,CY+18);
 }
 
 function drawNode(ctx,p,x,y){
