@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>OntoPortal Alliance Map</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap">
 <style>
@@ -23,10 +24,11 @@ const PORTALS = [
   {name:"BiodivPortal",    lines:["Biodiv","Portal"],     domain:"Biodiversity",           org:"GFBio · InfAI",    color:"#33691B",status:"production",fed:true, angle:108, r:285,nr:60},
   // Non-federated production — outer ring
   {name:"BioPortal",       lines:["BioPortal"],           domain:"Biomedical Ontologies",  org:"NCBO · Stanford",  color:"#234979",status:"production",fed:false,angle:138, r:375,nr:54},
-  {name:"MedPortal",       lines:["MedPortal"],           domain:"Chinese Biomedicine",    org:"BMICC",            color:"#1a5276",status:"production",fed:false,angle:162, r:375,nr:54},
-  {name:"MatPortal",       lines:["MatPortal"],           domain:"Materials Science",       org:"BAM · Fraunhofer", color:"#009574",status:"production",fed:false,angle:188, r:375,nr:54},
-  {name:"TechnoPortal",    lines:["Techno","Portal"],     domain:"Technology Sciences",    org:"HES-SO",           color:"#9C4E81",status:"production",fed:false,angle:214, r:375,nr:54},
-  {name:"OntoPortal Astro",lines:["OntoPortal","Astro"],  domain:"Astronomy",              org:"Obs Paris",        color:"#624ECF",status:"production",fed:false,angle:240, r:375,nr:54},
+  {name:"MedPortal",       lines:["MedPortal"],           domain:"Chinese Biomedicine",    org:"BMICC",            color:"#1a5276",status:"production",fed:false,angle:159, r:375,nr:54},
+  {name:"MatPortal",       lines:["MatPortal"],           domain:"Materials Science",       org:"BAM · Fraunhofer", color:"#009574",status:"production",fed:false,angle:180, r:375,nr:54},
+  {name:"TechnoPortal",    lines:["Techno","Portal"],     domain:"Technology Sciences",    org:"HES-SO",           color:"#9C4E81",status:"production",fed:false,angle:201, r:375,nr:54},
+  {name:"OntoPortal Astro",lines:["OntoPortal","Astro"],  domain:"Astronomy",              org:"Obs Paris",        color:"#624ECF",status:"production",fed:false,angle:222, r:375,nr:54},
+  {name:"TermPortal",     lines:["TermPortal"],          domain:"Terminology (OntoLex-Lemon)",org:"UPM · TeresIA",  color:"#322882",status:"production",fed:false,angle:243, r:375,nr:54},
   // Retired — mid ring
   {name:"SIFR BioPortal",  lines:["SIFR","BioPortal"],   domain:"French Biomedicine",     org:"LIRMM · INRIA",    color:"#74a9cb",status:"retired",   fed:false,angle:262, r:325,nr:52},
   {name:"IndustryPortal",  lines:["Industry","Portal"],   domain:"Industry",               org:"ENIT",             color:"#4040a0",status:"retired",   fed:false,angle:284, r:325,nr:52},
@@ -36,6 +38,22 @@ const PORTALS = [
   {name:"HSPortal",        lines:["HSPortal"],            domain:"Heritage Science",       org:"E-RHIS",           color:"#556080",status:"coming",    fed:false,angle:336, r:350,nr:46},
   {name:"LovPortal",       lines:["LovPortal"],           domain:"Web Vocabularies",       org:"",                 color:"#556080",status:"coming",    fed:false,angle:351, r:350,nr:46},
 ];
+
+// Theme: light by default, dark with ?theme=dark
+const DARK=new URLSearchParams(location.search).get('theme')==='dark';
+const T=DARK?{
+  bg:'#0d1117',ring:'rgba(255,255,255,0.045)',fedFill:'rgba(232,168,32,0.06)',fedLabel:'rgba(232,168,32,0.75)',
+  comingSpoke:'#3a4a66',comingFill:'#141b27',comingStroke:'#3a4a66',
+  comingName:'#7a8ea8',comingDom:'#5a6e88',comingOrg:'#4a5e78',
+  legendBg:'rgba(18,24,34,0.96)',legendStroke:'rgba(255,255,255,0.08)',legendTitle:'#6a7a90',legendText:'#c8d4e2',legendNote:'#4a5a70',
+  subtitle:'#8898aa',date:'#4a5a70',footer:'rgba(140,160,190,0.35)'
+}:{
+  bg:'#ffffff',ring:'rgba(0,0,0,0.045)',fedFill:'rgba(232,168,32,0.07)',fedLabel:'rgba(180,120,10,0.7)',
+  comingSpoke:'#aab8c8',comingFill:'#f0f4f8',comingStroke:'#aab8cc',
+  comingName:'#7a8ea8',comingDom:'#8898b0',comingOrg:'#6a7e98',
+  legendBg:'rgba(248,250,252,0.96)',legendStroke:'rgba(0,0,0,0.1)',legendTitle:'#6a7a90',legendText:'#2a3a50',legendNote:'#8898aa',
+  subtitle:'#5a6e86',date:'#8898aa',footer:'rgba(80,100,130,0.45)'
+};
 
 function rad(d){return d*Math.PI/180}
 function pos(p){const a=rad(p.angle-90);return[CX+p.r*Math.cos(a),CY+p.r*Math.sin(a)]}
@@ -61,13 +79,13 @@ function draw(){
   const ctx=canvas.getContext('2d');
   const W=canvas.width,H=canvas.height;
 
-  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,W,H);
+  ctx.fillStyle=T.bg;ctx.fillRect(0,0,W,H);
 
   // Subtle concentric guide rings
   ctx.save();
   [100,200,285,375].forEach(rr_=>{
     ctx.beginPath();ctx.arc(CX,CY,rr_,0,Math.PI*2);
-    ctx.strokeStyle='rgba(0,0,0,0.045)';ctx.lineWidth=1;ctx.stroke();
+    ctx.strokeStyle=T.ring;ctx.lineWidth=1;ctx.stroke();
   });
   ctx.restore();
 
@@ -78,12 +96,12 @@ function draw(){
   ctx.save();
   ctx.beginPath();ctx.moveTo(CX,CY);
   ctx.arc(CX,CY,fedMaxR,rad(faS-90),rad(faE-90));ctx.closePath();
-  ctx.fillStyle='rgba(232,168,32,0.07)';ctx.fill();
+  ctx.fillStyle=T.fedFill;ctx.fill();
   ctx.beginPath();ctx.arc(CX,CY,fedMaxR-2,rad(faS-90),rad(faE-90));
   ctx.strokeStyle='rgba(232,168,32,0.28)';ctx.lineWidth=1;ctx.stroke();
   const faMid=rad((faS+faE)/2-90);
   const flr=fedMaxR+18;
-  ctx.font='600 9.5px Syne,sans-serif';ctx.fillStyle='rgba(180,120,10,0.7)';
+  ctx.font='600 9.5px Syne,sans-serif';ctx.fillStyle=T.fedLabel;
   ctx.textAlign='center';ctx.textBaseline='middle';
   ctx.fillText('FEDERATION',CX+flr*Math.cos(faMid),CY+flr*Math.sin(faMid));
   ctx.restore();
@@ -95,7 +113,7 @@ function draw(){
     const sx=CX+(dx/dist)*74, sy=CY+(dy/dist)*74;
     const ex=x-(dx/dist)*(p.nr+1), ey=y-(dy/dist)*(p.nr+1);
     ctx.save();
-    ctx.strokeStyle=p.status==='production'?p.color:p.status==='retired'?desat(p.color,.4):'#aab8c8';
+    ctx.strokeStyle=p.status==='production'?p.color:p.status==='retired'?desat(p.color,.4):T.comingSpoke;
     ctx.lineWidth=p.status==='production'?1.5:1;
     ctx.globalAlpha=p.status==='production'?.75:p.status==='retired'?.45:.4;
     ctx.setLineDash(p.status==='retired'?[7,5]:p.status==='coming'?[2,4]:[]);
@@ -110,7 +128,7 @@ function draw(){
 
   ctx.save();
   ctx.font='400 11px DM Sans,sans-serif';
-  ctx.fillStyle='rgba(80,100,130,0.45)';ctx.textAlign='center';ctx.textBaseline='bottom';
+  ctx.fillStyle=T.footer;ctx.textAlign='center';ctx.textBaseline='bottom';
   ctx.fillText('ontoportal.org',W/2,H-14);
   ctx.restore();
 }
@@ -127,7 +145,7 @@ function drawHub(ctx){
   ctx.font='700 15px Syne,sans-serif';ctx.fillText('OntoPortal',CX,CY-14);
   ctx.font='700 13px Syne,sans-serif';ctx.fillText('Alliance',CX,CY+2);
   ctx.font='400 10px DM Sans,sans-serif';ctx.fillStyle='rgba(255,255,255,0.6)';
-  ctx.fillText('15 portals',CX,CY+18);
+  ctx.fillText('16 portals',CX,CY+18);
 }
 
 function drawNode(ctx,p,x,y){
@@ -143,8 +161,8 @@ function drawNode(ctx,p,x,y){
 
   ctx.beginPath();ctx.arc(x,y,NR,0,Math.PI*2);
   if(coming){
-    ctx.fillStyle='#f0f4f8';ctx.fill();
-    ctx.strokeStyle='#aab8cc';ctx.lineWidth=1.5;ctx.setLineDash([4,3]);ctx.stroke();ctx.setLineDash([]);
+    ctx.fillStyle=T.comingFill;ctx.fill();
+    ctx.strokeStyle=T.comingStroke;ctx.lineWidth=1.5;ctx.setLineDash([4,3]);ctx.stroke();ctx.setLineDash([]);
   } else {
     ctx.fillStyle=retired?desat(p.color,.52):p.color;ctx.fill();
     if(retired){
@@ -157,9 +175,9 @@ function drawNode(ctx,p,x,y){
     ctx.lineWidth=1.5;ctx.setLineDash([]);ctx.stroke();
   }
 
-  const nc=coming?'#7a8ea8':retired?'rgba(160,175,195,0.8)':'#fff';
-  const dc=coming?'#8898b0':retired?'rgba(140,160,185,0.7)':'rgba(255,255,255,0.82)';
-  const oc=coming?'#6a7e98':retired?'rgba(120,140,170,0.6)':'rgba(255,255,255,0.6)';
+  const nc=coming?T.comingName:retired?'rgba(160,175,195,0.8)':'#fff';
+  const dc=coming?T.comingDom:retired?'rgba(140,160,185,0.7)':'rgba(255,255,255,0.82)';
+  const oc=coming?T.comingOrg:retired?'rgba(120,140,170,0.6)':'rgba(255,255,255,0.6)';
 
   const maxW=NR*1.68;
   ctx.textAlign='center';ctx.textBaseline='middle';
@@ -194,9 +212,9 @@ function drawNode(ctx,p,x,y){
 function drawLegend(ctx,W,H){
   const lx=W-218,ly=H-218;
   rrect(ctx,lx-14,ly-14,210,204,8);
-  ctx.fillStyle='rgba(248,250,252,0.96)';ctx.fill();
-  ctx.strokeStyle='rgba(0,0,0,0.1)';ctx.lineWidth=1;ctx.stroke();
-  ctx.font='700 10px Syne,sans-serif';ctx.fillStyle='#6a7a90';
+  ctx.fillStyle=T.legendBg;ctx.fill();
+  ctx.strokeStyle=T.legendStroke;ctx.lineWidth=1;ctx.stroke();
+  ctx.font='700 10px Syne,sans-serif';ctx.fillStyle=T.legendTitle;
   ctx.textAlign='left';ctx.textBaseline='middle';ctx.fillText('LEGEND',lx,ly);
   const items=[
     {label:'Production',draw:(x,y)=>{ctx.beginPath();ctx.arc(x,y,9,0,Math.PI*2);ctx.fillStyle='#18b8ac';ctx.fill();}},
@@ -206,17 +224,17 @@ function drawLegend(ctx,W,H){
       for(let i=-18;i<18;i+=5){ctx.beginPath();ctx.moveTo(x-9+i,y-9);ctx.lineTo(x-9+i+18,y+9);ctx.stroke();}
       ctx.restore();
     }},
-    {label:'Coming soon',draw:(x,y)=>{ctx.beginPath();ctx.arc(x,y,9,0,Math.PI*2);ctx.strokeStyle='#2a3852';ctx.lineWidth=1.5;ctx.setLineDash([3,2]);ctx.stroke();ctx.setLineDash([]);}},
+    {label:'Coming soon',draw:(x,y)=>{ctx.beginPath();ctx.arc(x,y,9,0,Math.PI*2);ctx.strokeStyle=DARK?'#3a4a66':'#2a3852';ctx.lineWidth=1.5;ctx.setLineDash([3,2]);ctx.stroke();ctx.setLineDash([]);}},
     {label:'Federation member',draw:(x,y)=>{ctx.beginPath();ctx.arc(x,y,11,0,Math.PI*2);ctx.strokeStyle='#e8a820';ctx.lineWidth=2.5;ctx.stroke();}},
   ];
   let iy=ly+28;
   for(const item of items){
     ctx.save();item.draw(lx+11,iy);ctx.restore();
-    ctx.font='400 12px DM Sans,sans-serif';ctx.fillStyle='#2a3a50';
+    ctx.font='400 12px DM Sans,sans-serif';ctx.fillStyle=T.legendText;
     ctx.textAlign='left';ctx.textBaseline='middle';ctx.fillText(item.label,lx+28,iy);
     iy+=30;
   }
-  ctx.font='italic 400 10px DM Sans,sans-serif';ctx.fillStyle='#8898aa';
+  ctx.font='italic 400 10px DM Sans,sans-serif';ctx.fillStyle=T.legendNote;
   ctx.fillText('Gold arc = federated cluster',lx,iy+6);
 }
 
@@ -225,10 +243,10 @@ function drawTitle(ctx){
   ctx.textAlign='left';ctx.textBaseline='top';
   ctx.font='800 18px Syne,sans-serif';ctx.fillStyle='#18b8ac';
   ctx.fillText('ONTOPORTAL ALLIANCE',34,34);
-  ctx.font='400 12px DM Sans,sans-serif';ctx.fillStyle='#5a6e86';
+  ctx.font='400 12px DM Sans,sans-serif';ctx.fillStyle=T.subtitle;
   ctx.fillText('Semantic Artefact Catalogue Ecosystem',34,58);
-  ctx.font='400 11px DM Sans,sans-serif';ctx.fillStyle='#8898aa';
-  ctx.fillText('September 2026',34,76);
+  ctx.font='400 11px DM Sans,sans-serif';ctx.fillStyle=T.date;
+  ctx.fillText('November 2026',34,76);
   ctx.restore();
 }
 
