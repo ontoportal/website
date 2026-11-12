@@ -93,7 +93,18 @@ sponsors:
     link: https://cnes.fr/en
     logo: '/images/sponsor_logos/cnes.png'
     portals: 'OntoPortal-Astro'
-
+  - acronym: 'ECHOES'
+    logo: '/images/sponsor_logos/ECHOES_Logo.png'
+    link: https://www.echoes-eccch.eu/
+    portals: 'CHPortal'
+  - acronym: 'European Union'
+    logo: '/images/sponsor_logos/EN_Logo.png'
+    link: https://cordis.europa.eu/project/id/101157364
+    portals: 'CHPortal'
+  - acronym: 'UKRI'
+    logo: '/images/sponsor_logos/UKRI_Logo.png'
+    link: https://www.ukri.org/
+    portals: 'CHPortal'
 # -----
 # Build
 

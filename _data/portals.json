@@ -138,8 +138,12 @@
     "acronym": "CHPortal",
     "name": "CHPortal",
     "description": "ECHOES repository of Cultural Heritage ontologies",
-    "status": "coming",
-    "federation": false
+    "status": "production",
+    "federation": false,
+    "link": "https://chportal.culturalheritagecloud.eu/",
+    "api_url": "https://data.chportal.culturalheritagecloud.eu",
+    "logo": "/images/alliance_member_logos/chportal.png",
+    "color": "#EFAF3B"
   },
   {
     "acronym": "SocioPortal",
