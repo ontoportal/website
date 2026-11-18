@@ -23,6 +23,10 @@ Run `jekyll` commands through Bundler to ensure you're using the right versions:
 $ bundle exec jekyll serve
 ~~~
 
+## Adding a new portal
+
+When a portal joins the OntoPortal Alliance, several places need an update (portals list, sponsors, diagram, blog post). Open your PR with the [new portal template](https://github.com/ontoportal/website/compare?template=new-portal.md); it lists every step.
+
 ## Editing
 
 Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
