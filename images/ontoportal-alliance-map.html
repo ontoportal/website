@@ -27,13 +27,12 @@ const PORTALS = [
   {name:"MatPortal",       lines:["MatPortal"],           domain:"Materials Science",       org:"BAM · Fraunhofer", color:"#009574",status:"production",fed:false,angle:188, r:375,nr:54},
   {name:"TechnoPortal",    lines:["Techno","Portal"],     domain:"Technology Sciences",    org:"HES-SO",           color:"#9C4E81",status:"production",fed:false,angle:214, r:375,nr:54},
   {name:"OntoPortal Astro",lines:["OntoPortal","Astro"],  domain:"Astronomy",              org:"Obs Paris",        color:"#624ECF",status:"production",fed:false,angle:240, r:375,nr:54},
-  {name:"CHPortal",        lines:["CHPortal"],            domain:"Cultural Heritage",      org:"ECHOES",           color:"#EFAF3B",status:"production",fed:false,angle:262, r:375,nr:54},
+  {name:"CHPortal",        lines:["CHPortal"],            domain:"Cultural Heritage",      org:"ECHOES",           color:"#EFAF3B",status:"production",fed:false,angle:258, r:375,nr:54},
+  {name:"SocioPortal",     lines:["Socio","Portal"],      domain:"Social Sciences",        org:"CESSDA",           color:"#5a2574",status:"production",fed:false,angle:275, r:375,nr:54},
   // Retired — mid ring
-  {name:"SIFR BioPortal", lines:["SIFR","BioPortal"],     domain:"French Biomedicine",     org:"LIRMM · INRIA",    color:"#74a9cb",status:"retired",   fed:false,angle:282, r:325,nr:52},
-  {name:"IndustryPortal", lines:["Industry","Portal"],    domain:"Industry",               org:"ENIT",             color:"#4040a0",status:"retired",   fed:false,angle:302, r:325,nr:52},
+  {name:"SIFR BioPortal", lines:["SIFR","BioPortal"],     domain:"French Biomedicine",     org:"LIRMM · INRIA",    color:"#74a9cb",status:"retired",   fed:false,angle:298, r:325,nr:52},
+  {name:"IndustryPortal", lines:["Industry","Portal"],    domain:"Industry",               org:"ENIT",             color:"#4040a0",status:"retired",   fed:false,angle:318, r:325,nr:52},
   // Coming — mid-outer ring
-  {name:"SocioPortal", lines:["Socio","Portal"], domain:"Social Sciences", org:"CESSDA", color:"#556080",status:"coming", fed:false,angle:322, r:350,nr:46},
- 
   {name:"HSPortal",        lines:["HSPortal"],            domain:"Heritage Science",       org:"E-RHIS",           color:"#556080",status:"coming",    fed:false,angle:336, r:350,nr:46},
   {name:"LovPortal",       lines:["LovPortal"],           domain:"Web Vocabularies",       org:"",                 color:"#556080",status:"coming",    fed:false,angle:351, r:350,nr:46},
 ];
@@ -229,7 +228,7 @@ function drawTitle(ctx){
   ctx.font='400 12px DM Sans,sans-serif';ctx.fillStyle='#5a6e86';
   ctx.fillText('Semantic Artefact Catalogue Ecosystem',34,58);
   ctx.font='400 11px DM Sans,sans-serif';ctx.fillStyle='#8898aa';
-  ctx.fillText('September 2026',34,76);
+  ctx.fillText('November 2026',34,76);
   ctx.restore();
 }
 

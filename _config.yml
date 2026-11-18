@@ -105,6 +105,10 @@ sponsors:
     logo: '/images/sponsor_logos/UKRI_Logo.png'
     link: https://www.ukri.org/
     portals: 'CHPortal'
+  - acronym: 'CDIF4EOSC'
+    logo: '/images/sponsor_logos/CDIF4EOSC.png'
+    link: https://cdif4eosc.eu/
+    portals: 'SocioPortal'
 # -----
 # Build
 
