@@ -105,6 +105,18 @@ sponsors:
     logo: '/images/sponsor_logos/UKRI_Logo.png'
     link: https://www.ukri.org/
     portals: 'CHPortal'
+  - acronym: 'Ministerio para la Transformación Digital y de la Función Pública'
+    logo: '/images/sponsor_logos/MTDFP_Logo.jpg'
+    link: https://digital.gob.es/
+    portals: 'TermPortal'
+  - acronym: 'Plan de Recuperación, Transformación y Resiliencia'
+    logo: '/images/sponsor_logos/PRTR_Logo.jpg'
+    link: https://planderecuperacion.gob.es/
+    portals: 'TermPortal'
+  - acronym: 'NextGenerationEU'
+    logo: '/images/sponsor_logos/NextGenerationEU_Logo.jpg'
+    link: https://next-generation-eu.europa.eu/
+    portals: 'TermPortal'
 # -----
 # Build
 

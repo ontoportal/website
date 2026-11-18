@@ -132,6 +132,16 @@
     "color": "#EFAF3B"
   },
   {
+    "acronym": "TermPortal",
+    "name": "TermPortal",
+    "link": "https://portal.proyectoteresia.org/metabuscador",
+    "logo": "/images/alliance_member_logos/termportal.png",
+    "color": "#ffffff",
+    "description": "TeresIA terminology portal with OntoLex-Lemon support, developed by UPM and librAIry",
+    "status": "production",
+    "federation": false
+  },
+  {
     "acronym": "LovPortal",
     "name": "LovPortal",
     "description": "A gateway to reusable semantic vocabularies on the Web",

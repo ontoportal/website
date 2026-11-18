@@ -9,7 +9,7 @@ date: 2026-10-19
 
 The OntoPortal community gathered at the Observatoire de Paris, France, from September 21 to 25, 2026, for the **5th OntoPortal Workshop**, bringing members together both on site and online.
 
-The Alliance now brings together **10 public portals and 3 upcoming ones**, with [CHPortal](https://chportal.culturalheritagecloud.eu/){:target="_blank"}, the repository of cultural heritage ontologies, newly released this year. The workshop highlighted the complementary roles of the broader Alliance—as an open community of practice—and the more committed **OntoPortal Federation**.
+The Alliance now brings together **11 public portals and 3 upcoming ones**, with [CHPortal](https://chportal.culturalheritagecloud.eu/){:target="_blank"}, the repository of cultural heritage ontologies, newly released this year. The workshop highlighted the complementary roles of the broader Alliance—as an open community of practice—and the more committed **OntoPortal Federation**.
 
 A key highlight was the **public online session** (September 23), gathering 77 attendees from across international communities, featuring six presentations by representative users:
 
