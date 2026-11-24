@@ -132,6 +132,17 @@
     "color": "#EFAF3B"
   },
   {
+    "acronym": "SocioPortal",
+    "name": "SocioPortal",
+    "description": "CESSDA repository of social sciences ontologies and semantic artefacts",
+    "status": "production",
+    "federation": false,
+    "link": "https://socioportal.org/",
+    "api_url": "https://api.socioportal.org",
+    "logo": "/images/alliance_member_logos/socioportal.png",
+    "color": "#5a2574"
+  },
+  {
     "acronym": "TermPortal",
     "name": "TermPortal",
     "link": "https://portal.proyectoteresia.org/metabuscador",
@@ -152,13 +163,6 @@
     "acronym": "HSPortal",
     "name": "HSPortal",
     "description": "The home of ontologies and semantic artefacts in Heritage Science.",
-    "status": "coming",
-    "federation": false
-  },
-  {
-    "acronym": "SocioPortal",
-    "name": "SocioPortal",
-    "description": "CESSDA repository of social sciences ontologies and semantic artefacts",
     "status": "coming",
     "federation": false
   }
