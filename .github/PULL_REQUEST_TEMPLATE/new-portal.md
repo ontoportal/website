@@ -16,7 +16,7 @@ Please branch from an up-to-date `main`: the map and `_data/portals.json` change
 ## Checklist
 
 - [ ] **Review by the portal team**: the portal's contact reviewed the wording, logo and links.
-- [ ] **Portals list**: entry added to `_data/portals.json` (acronym, name, link, `api_url`, description, status, `federation`); `api_url` is the REST API that other portals read from `portals.json`, with the logo in `images/alliance_member_logos/` and a background `color` that suits it.
+- [ ] **Portals list**: entry added to `_data/portals.json` (acronym, name, link, `api_url`, description, status, `federation`), with the logo in `images/alliance_member_logos/` and a background `color` that suits it. `api_url` is the portal's REST API, used by other portals through `portals.json`.
 - [ ] **Our sponsors**: funders / projects added to `sponsors:` in `_config.yml` (`portals:` set to the new portal), with logos in `images/sponsor_logos/`.
 - [ ] **Alliance diagram**: node added to `images/ontoportal-alliance-map.html` and the portal count updated; both PNGs regenerated, `images/ontoportal-alliance-map-light.png` (default) and `images/ontoportal-alliance-map.png` (`?theme=dark`), as 1400x1000. Check that accents and symbols render correctly.
 - [ ] **Blog post**: announcement added in `_posts/` (`YYYY-MM-DD-title.md`), or agreed with the maintainers that none is needed.
