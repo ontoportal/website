@@ -146,8 +146,9 @@
     "acronym": "TermPortal",
     "name": "TermPortal",
     "link": "https://portal.proyectoteresia.org/metabuscador",
+    "api_url": "https://portal.proyectoteresia.org/metabuscador/api/",
     "logo": "/images/alliance_member_logos/termportal.png",
-    "color": "#ffffff",
+    "color": "#234979",
     "description": "TeresIA terminology portal with OntoLex-Lemon support, developed by UPM and librAIry",
     "status": "production",
     "federation": false
